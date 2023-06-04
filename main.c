@@ -47,7 +47,7 @@ void printPets(float price) {
     struct Pet pet;
     int len=strlen(pet.name);
     FILE *fp;
-    fp=fopen("animalsBin.bin","wb");
+    fp=fopen("animalsBin.bin","rb");
     if (fp==NULL) {
         printf("Error opening file!");
         exit(2);
